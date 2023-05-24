@@ -1,4 +1,4 @@
-name: Sensitive-CI
+name: Sensitive-CI-branch
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - 'code/**'
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: branch-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
   
 jobs:
