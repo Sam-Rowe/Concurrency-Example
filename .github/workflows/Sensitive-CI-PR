@@ -1,4 +1,4 @@
-name: Sensitive-CI-branch
+name: Sensitive-CI-PR
 
 on:
   pull_request:
